@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <head>
+    
+    /<script>
+        function firstjavascript() {
+            
+            document.getElementById('colorbox').style.display="none";
+        }
+        
+        function secondjavascript() {
+            
+            document.getElementById('colorbox').style.display="block";
+        }
+        
+        function myquiz() {
+            document.write=('What is the color of nigeria flag');
+        }
+        
+        function answer() {
+            
+            window.alert('The Answer is Green & White');
+        }
+        </script>
+    </head>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('bulb').src='/Users/imacameer/Desktop/Edinburgh/Javascipt tutorial/imgs/pic_bulbon.gif'">Turn on the light</button>
+
+<img id="bulb" src="/Users/imacameer/Desktop/Edinburgh/Javascipt tutorial/imgs/pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('bulb').src='/Users/imacameer/Desktop/Edinburgh/Javascipt tutorial/imgs/pic_bulboff.gif'">Turn off the light</button>
+
+    <div>
+<p id="great"> الله أكبر كبيرا</p>
+    <button onclick="document.getElementById('great').style.fontSize='75px'" >كبر الله !</button>
+    </div>
+    
+    <div>
+    <h2>My Online Quiz</h2>
+    <p id="question"></p>
+    <select>
+        <option>Red & White</option>
+        <option>Yellow & Blue</option>
+        </select>
+    <button type="button" onclick="answer();">Submit</button>
+    </div>
+    
+    <button onclick="window.print()">Print this page</button>
+    
+    <p id="que"></p>
+    <script>
+let a, b, c;
+    a = 6;
+    b = 6;
+    c = a + b;
+    document.getElementById('que').innerHTML ="The value of c is" + c + ".";
+        
+</script>
+    
+</body>
+</html>
